@@ -1,6 +1,7 @@
 #8051 ATMEL AT89C51
-#Simple Program for toggling 2 pins 
+#Simple Program for toggling 2 pins ( 55H = b'0101 0101 => b'1010 1010 )
        ORG 0000H
+       MOV A,#55H 
 AGAIN: MOV P1, A
        ACALL DELAY
        CPL A
